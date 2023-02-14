@@ -32,7 +32,7 @@ const checkServerStatus = () => {
   });
 };
 
-cron.schedule('* * * * *', () => {
+cron.schedule(process.env.SCHEDULE || '* * * * *', () => {
   checkServerStatus();
 });
 
