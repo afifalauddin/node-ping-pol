@@ -11,7 +11,7 @@ const HOSTS = (process.env.HOSTS || '').split(',');
 const HTTP_API_TOKEN = process.env.HTTP_API_TOKEN || '';
 const CHAT_ID = process.env.CHAT_ID || '';
 
-const MONITOR_DOWN_ONLY = process.env.MODE === 'DOWN' ?? false;
+const MONITOR_DOWN_ONLY = process.env.MODE === 'DOWN' ? true : false;
 
 const logger = winston.createLogger({
   format: winston.format.combine(
