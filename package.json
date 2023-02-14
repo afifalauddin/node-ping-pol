@@ -12,6 +12,8 @@
     "dotenv": "^16.0.3",
     "node-cron": "^3.0.2",
     "node-fetch": "^2.6.9",
-    "ping": "^0.4.2"
+    "ping": "^0.4.2",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1"
   }
 }
